@@ -1,0 +1,39 @@
+{
+  "requires": {
+    "cds.xt.ExtensibilityService": {
+      "element-prefix": [
+        "x_"
+      ],
+      "extension-allowlist": [
+        {
+          "for": [
+            "com.sap.di.irp.postingDocument.PostingDocuments",
+            "com.sap.di.irp.returnableAccount.ReturnableAccounts",
+            "com.sap.di.irp.returnableAccountSerialNumbers.ReturnableAccountSerialNumbers",
+            "com.sap.di.irp.inboundTransaction.InboundTransactions",
+            "com.sap.di.irp.inboundStatement.InboundStatements",
+            "com.sap.di.irp.viewReturnableMaterial.ViewReturnablePackagingMaterials",
+            "com.sap.di.irp.viewBusinessPartner.BusinessPartnerAccounts",
+            "com.sap.di.irp.returnableStockOverview.ReturnableStockOverviews",
+            "com.sap.di.irp.packagingIssue.PackagingIssues"
+          ],
+          "kind": "entity"
+        },
+        {
+          "for": [
+            "ManagePostingDocumentService",
+            "ManageReturnableAccountService",
+            "ReturnableAccountSerialNumberService",
+            "MatchInboundStatementService",
+            "ManageInboundStatementService",
+            "ViewReturnableMaterialService",
+            "ViewBusinessPartnerService",
+            "ReturnableStockOverviewService",
+            "ManagePackagingIssueService",
+            "ReviewPostingDocumentService"
+          ]
+        }
+      ]
+    }
+  }
+}
